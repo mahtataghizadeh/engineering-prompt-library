@@ -1,41 +1,34 @@
-Create a **{endpoint_name}** API endpoint using **{framework}** (e.g. NestJS, Express, FastAPI, ASP.NET Core, etc.).
+Create a **{endpoint_name}** API endpoint using **{framework}** (NestJS, Express, FastAPI, ASP.NET Core, etc.).
 
 ### Requirements:
 
-**Functional Requirements:**
-- Implement the full endpoint logic according to the described use case
-- Follow RESTful principles (or GraphQL if specified)
-- Use proper HTTP methods and status codes
-- Return consistent response format across the application
+**Functional:**
+- Implement complete business logic for this endpoint
+- Follow RESTful best practices (or GraphQL if specified)
+- Use correct HTTP method and return appropriate status codes
+- Return consistent response structure used across the project
 
-**Technical Requirements:**
-- Full input validation using the framework's preferred method (Zod, Pydantic, class-validator, DataAnnotations, etc.)
-- Proper error handling with meaningful error messages
-- Implement logging for important events and errors
-- Add necessary authentication and authorization checks
-- Use dependency injection where applicable
-- Follow async/await patterns properly
+**Technical:**
+- Full input validation (Zod / Pydantic / class-validator / etc.)
+- Comprehensive error handling with user-friendly messages
+- Proper logging (success, errors, important events)
+- Authentication and authorization checks
+- Use dependency injection correctly
+- Async/await best practices
 
 **Code Quality:**
-- Clean, readable, and well-structured code
-- Comprehensive JSDoc / docstrings / XML comments
-- Meaningful variable and function names
-- Proper separation of concerns
-- Follow the existing architecture and patterns in this project
+- Clean, readable, well-structured code
+- Follow existing project architecture and naming conventions
+- Comprehensive documentation (JSDoc / docstrings)
+- Proper separation of concerns (controllers, services, repositories)
 
 **Security & Performance:**
-- Protect against common vulnerabilities (injection, rate limiting, etc.)
-- Consider pagination for list endpoints
-- Add appropriate caching headers if needed
-- Validate and sanitize all user inputs
+- Protect against common web vulnerabilities
+- Input sanitization
+- Consider pagination, filtering, and sorting for list endpoints
+- Add rate limiting considerations if applicable
 
-**Additional Output:**
-- Suggest relevant unit or integration test cases
-- Include any necessary DTOs, request/response models, or schemas
-- Add OpenAPI/Swagger annotations if applicable
-
----
-
-**Example Usage:**
-Endpoint: `POST /api/users`
-Framework: NestJS + TypeScript
+**Additional:**
+- Include request/response DTOs or models
+- Add OpenAPI/Swagger annotations if used in the project
+- Suggest relevant unit/integration test cases
